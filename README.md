@@ -1,3 +1,4 @@
+<img src="icon_preview.png" width="120" align="right">
 # 跳广告 · AdSkipper
 
 一个 Android 小工具：**自动点掉 App 开屏广告、关掉应用内广告弹窗**。
