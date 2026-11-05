@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">跳广告</string>
+    <string name="accessibility_label">跳广告 · 自动跳过开屏广告</string>
+    <string name="accessibility_description">用于读取当前屏幕上的窗口结构，找到「跳过」按钮并自动点击。仅在白名单内的 App 中工作，不联网、不上传任何数据。</string>
+
+    <string name="ui_title">跳广告（调试版）</string>
+    <string name="ui_subtitle">只观察，不点击 · 仅处理白名单</string>
+    <string name="ui_open_settings">去开启无障碍服务</string>
+    <string name="ui_guide">各机型开启 / 防关闭指南</string>
+    <string name="guide_title">开启与保活指南</string>
+    <string name="guide_sub">按你的机型逐步操作。当前机型已标星排在最上面。</string>
+    <string name="guide_open_appinfo">打开「跳广告」的应用信息（解除受限设置用）</string>
+    <string name="ui_add_last">把最近检测到的 App 加入白名单</string>
+    <string name="ui_clear">清空白名单</string>
+    <string name="ui_whitelist_title">白名单（点某一行可移除）</string>
+    <string name="ui_learn">学习模式：手动点一次，下次自动点</string>
+    <string name="ui_keep">后台保活（常驻通知，减少被系统杀掉）</string>
+    <string name="ui_stable">稳定模式：少掉线，费点电</string>
+    <string name="stable_title">要一直开着吗？</string>
+    <string name="stable_message">开着它，跳广告会更靠谱。\n\n系统有时候会把跳广告悄悄关掉；锁屏久了，也会把它冻住不干活。开了这个，它会自己发现被关了、再打开，也不容易被冻住。\n\n坏处有两个：\n· 会多费一点电\n· 通知栏会一直挂着一条「跳广告正在运行」\n\n费多少电？说实话不多，一晚上大概几个百分点，不会让你觉得手机掉电变快。\n\n经常遇到「广告没跳过」就开；觉得省电更重要就关着，偶尔漏一次也没关系。\n\n随时可以回来关掉。</string>
+    <string name="stable_ok">开着吧</string>
+    <string name="stable_cancel">算了</string>
+    <string name="ui_rules_title">学习记录（点某一行可删除）</string>
+    <string name="ui_clear_rules">清空学习记录</string>
+    <string name="ui_debug">调试模式：处理所有 App（不看白名单）</string>
+    <string name="ui_howto">使用步骤：\n\n1. 开启无障碍服务\n2. 打开目标 App，等广告/弹窗出现\n3. 【学一次】打开本页的「学习模式」，回到目标 App，手动点一次那个关闭按钮。学习模式会一直开着，可以连续记多条，学够了回来关掉\n4. 【以后自动】下次同样的按钮会自动被点掉\n\n能认的按钮：\n· 文字是「跳过 / 跳过3 / skip」的\n· 资源 id 含 close / dismiss 的小按钮\n· 你亲手指过一次的（学习记录）\n\n隐私说明：本 App 没有申请 INTERNET 权限，系统层面就无法联网；不在白名单里的 App，连控件树都不会读取。\n\n若被系统自动关闭无障碍：用 adb 执行一次\nadb shell pm grant com.zhao.adskipper android.permission.WRITE_SECURE_SETTINGS\n之后本 App 会自己把服务写回去。</string>
+
+    <string name="status_on">✅ 无障碍服务已开启</string>
+    <string name="status_off">❌ 无障碍服务未开启\n请点下面的按钮去开启「跳广告」</string>
+</resources>

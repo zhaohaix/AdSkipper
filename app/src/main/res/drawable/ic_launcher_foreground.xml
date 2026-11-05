@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- 「跳过」符号：两个快速前进三角 + 一条竖杠，整体白色 -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M26,36 L46,54 L26,72 Z" />
+
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M47,36 L67,54 L47,72 Z" />
+
+    <!-- 竖杠，圆角 -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M71,36.5
+            a3.5,3.5 0 0 1 3.5,-3.5
+            h5
+            a3.5,3.5 0 0 1 3.5,3.5
+            v35
+            a3.5,3.5 0 0 1 -3.5,3.5
+            h-5
+            a3.5,3.5 0 0 1 -3.5,-3.5
+            z" />
+</vector>
